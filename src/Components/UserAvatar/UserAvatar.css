@@ -1,0 +1,44 @@
+.userAvatar {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.userAvatar__initials {
+    position: relative;
+    top: 12.5px;
+    font-size: 25px;
+    line-height: 25px;
+    color: #FFF;
+    font-family: "Nunito", monospace;
+    font-weight: bold;
+}
+
+.userAvatar__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.userAvatar__menu {
+  margin-top: 4vh;
+}
+
+@media only screen and (min-width: 600px) {
+  .userAvatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  .userAvatar__initials {
+    top: 17.5px;
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  li.MuiButtonBase-root.MuiListItem-root {
+    font-size: 1.2em;
+  }
+}

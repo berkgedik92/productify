@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import '../App/App.css';
+
+.header {
+    font-family: 'Righteous', sans-serif;
+    padding: 2vh 2vw;
+    background: #f4f4f4;
+    color: #f9f9f9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+.header__buttons {
+    align-self: center; 
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__buttons > a {
+    text-align: center;
+    margin: 0.25vh 0.5vw;
+}
+
+.header .logo {
+    color: var(--title-gray);
+    margin: 0;
+}
+
+.header__productify {
+    text-decoration: none;
+    color: var(--title-gray);
+}
+
+@media only screen and (min-width: 400px) {
+    .header__buttons {
+        flex-direction: row;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .header {
+        font-size: 1.2em;
+    }
+}

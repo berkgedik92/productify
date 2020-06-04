@@ -1,0 +1,33 @@
+.projects {
+    display: flex;
+}
+
+.projects > * {
+    background: #f7f7f7;
+}
+
+@media only screen and (max-width: 450px) {
+    .swipeView {
+        overflow-x: auto;
+        overflow-y: auto;
+        scroll-snap-coordinate: 0 0;
+        scroll-snap-points-x: repeat(100%);
+        scroll-snap-type: x mandatory;
+        flex: 1;
+        display:flex;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .swipeView > div {
+        width: 100vw;
+        flex:0 0 100vw;
+        scroll-snap-align: start;
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    .projects {
+        display: grid;
+        grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    }
+}

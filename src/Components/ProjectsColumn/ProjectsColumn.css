@@ -1,0 +1,42 @@
+@import '../App/App.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+.projects__column {
+    height: 100%;
+    margin: 1vh 0.5vw;
+    padding: 0.5vh 0.5vw;
+    color: #343434;
+    border-radius: 5px;
+}
+
+.projects__column.projects__sidebar {
+    border: 1px solid #a7a7a7;
+    background: #f0f0f0;
+}
+
+.projects__column__heading {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.projects__tasksBacklog {
+    border-color: #c45466;
+    color: #c45466;
+}
+
+.projects__tasksInProgress {
+    border-color: #35b0a7;
+    color: #35b0a7;
+}
+
+.projects__tasksInReview {
+    border-color: #bbbb26;
+    color: #bbbb26;
+}
+
+.projects__tasksComplete {
+    border-color: #76ce60;
+    color: #76ce60;
+}
+

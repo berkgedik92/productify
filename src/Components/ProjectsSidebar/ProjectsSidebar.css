@@ -1,0 +1,69 @@
+@import '../App/App.css';
+
+.projects__sidebar.projects__column {
+    line-height: normal;
+    height: 100%;
+}
+
+.projects__sidebar_charts {
+    background: #FFF;
+    border-radius: 5px;
+    padding: 2vh 0;
+}
+
+.projects__sidebar_projects {
+    margin-bottom: 3vh;
+}
+
+.projectSidebar__backButton {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.projectSidebar__backButton > a {
+    margin-top: 2vh;
+}
+
+.projects__sidebar_button {
+    background-image: linear-gradient(to top left, #FFF, #dcdcdc, #a9a9a9);
+    color: var(--main-text-color);
+    margin: 1vh auto;
+}
+
+.projects__sidebar_newTaskButton:hover {
+    background: var(--productify-green);
+}
+
+.project__sidebar_projectTitle {
+    margin-top: 0;
+}
+
+.projects__sidebar_filterButton:hover {
+    background: #FFF;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding: 2vh 0vw;
+}
+
+.projects__sidebar_teamName {
+    margin: 0;
+    margin-top: 3vh;
+    text-align: center;
+    writing-mode: vertical-lr;
+}
+
+.projects__sidebar_teamName_container {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 500px) {
+    .projects__sidebar_teamName {
+        writing-mode: horizontal-tb;
+    }
+}

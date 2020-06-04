@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+
+:root {
+    --main-accent-color: #7fdae1;
+    --title-gray: #767676;
+    --button-hover-color: #6fc3c9;
+    --main-text-color: #3a3a3a;
+    --accent-gradient-color: #f0c7f0c1;
+    --placeholder-text-color: #b6b6b6;
+    --productify-red: #ffebeb;
+    --productify-green: #e0ffd9;
+    --productify-turquoise: #e1fcfb;
+    --productify-orange: #e3a46079;
+    --productify-purple: #eac0ff5d;
+    --productify-yellow: #ffffd9;
+    --productify-pink: #ffc0c092;
+    --productify-blue: #c0d7ff6e;
+    --div-background: #ebebeb87;
+    --button-go: #46c62787;
+    --button-back: #f47f7fd2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--main-text-color);
+}
+
+.button {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+    background-color: var(--main-accent-color);
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.button:hover {
+    background-color: var(--button-hover-color);
+    cursor: pointer;
+}
+
+.centeredContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    line-height: 0.75;
+}
+
+input::placeholder {
+    color: var(--placeholder-text-color);
+}
+
+form  {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+}
+
+.productifyGradient {
+    background: -webkit-linear-gradient( #d0e9eb, var(--main-accent-color),var(--main-accent-color), #d0e9eb);
+}
+
+form > button {
+    font-size: 0.75em;
+    padding: 8px;
+    margin: 2vh auto;
+    width: 60%;
+}
+
+form > label {
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 2vh;
+    font-size: 0.9em;
+}
+
+form > input {
+    font-size: 0.75em;
+    padding: 1vh 0 1vh 0;
+    width: 35vw;
+    margin: 0.5vh 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.stopButton {
+    border: 2px solid var(--button-back);
+    color: var(--button-back);
+    background-color: #FFF;
+}
+
+.stopButton:hover {
+    background-color: var(--button-back);
+    color: #FFF;
+}
+
+.deleteButton {
+    border: 2px solid #b8b823;
+    color: #b8b823;
+    background-color: #FFF;
+}
+
+.deleteButton:hover {
+    background-color: #b8b823;
+    color: #FFF;
+}
+
+.goButton {
+    border: 2px solid var(--button-go);
+    color: var(--button-go);
+    background-color: #FFF;
+}
+
+.goButton:hover {
+    background-color: var(--button-go);
+    color: #FFF;
+}

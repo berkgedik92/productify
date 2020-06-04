@@ -1,68 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Productify
 
-## Available Scripts
+Productify is your new favorite tool for organizing projects and increasing productivity. Designed for any form of team work, from software development to HR, sales to product management, Productify allows you to efficiently lay out what tasks need to be done, what the task's progress is, and who should be assigned to take on the task. The interface also provides responsive charts to give a quick visual overview of a project's progress.
 
-In the project directory, you can run:
+## Demo
 
-### `yarn start`
+A demo version is available [here](https://productify-app.now.sh/).
+Use the following dummy credentials to log in and take a tour:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Username: aaa@gmail.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Password: aaa
 
-### `yarn test`
+Please note that this demo version is intended for demo purposes only. For security purposes, we do not recommend that you sign up using your own personal information.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `yarn build`
+Simply clone the repo and run ```npm i```
+You will also need to connect this client to a server. A modifiable version can be found [here](https://github.com/ailsamm/productify-server) (simply clone, run ```npm i``` and then, in this app, change the URL in the ./src/config.js) or work with the already-deployed version that is specified already in ./src/config.js.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech Stack
+Productify is written with ReactJS, Javascript, HTML5, CSS3.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Usage
+See the following screenshots for an overview of how Productify can be used.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![projects page](./public/images/projects.png)
 
-### `yarn eject`
+![show only my tasks](./public/images/showonlymine.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![filter by project](./public/images/filterbyproject.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![charts](./public/images/charts.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![add new task](./public/images/addtask.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![move tasks](./public/images/movetasks.png)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![my profile](./public/images/myprofile.png)

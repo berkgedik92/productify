@@ -4,36 +4,38 @@ import { faHeadset, faPeopleArrows, faLaptopCode, faLaptopHouse, faTasks, faVide
 import './AboutPage.css';
 
 export default class AboutPage extends Component {
-    render(){
+
+
+    constructor(props) {
+        super(props);
+        this.items = [
+            {"name": "Remote Work", "icon": faLaptopHouse, "color": "var(--productify-red)"},
+            {"name": "Software Development", "icon": faLaptopCode, "color": "var(--productify-green)"},
+            {"name": "HR", "icon": faPeopleArrows, "color": "var(--productify-turquoise)"},
+            {"name": "Product Management", "icon": faTasks, "color": "var(--productify-orange)"},
+            {"name": "Sales", "icon": faHeadset, "color": "var(--productify-purple)"},
+            {"name": "Media", "icon": faVideo, "color": "var(--productify-yellow)"},
+            {"name": "IT", "icon": faMicrochip, "color": "var(--productify-pink)"},
+            {"name": "Marketing", "icon": faAd, "color": "var(--productify-blue)"},
+        ];
+    }
+
+    render() {
+
+        const itemsToRender = this.items.map(function(item) {
+            return (
+                <div className="aboutPage__useCaseItem aboutPage" style={{background: item.color}}>
+                    <h5 className="aboutPage__useCaseItemName">{item.name}<FontAwesomeIcon className="aboutPage__icon" icon={item.icon}/></h5>
+                </div>
+            );
+        });
+
         return (
             <div className="aboutPage centeredContent">
                 <div className="aboutPage__section aboutPage__section1">
                     <h2 className="aboutPage__sectionHeader">increase productivity, any time, anywhere</h2>
                     <div className="aboutPage__useCaseItems">
-                        <div className="aboutPage__useCaseItem aboutPage__useCaseItem1">
-                            <h5 className="aboutPage__useCaseItemName">Remote Work <FontAwesomeIcon className="aboutPage__icon" icon={faLaptopHouse}/></h5>
-                        </div>
-                        <div className="aboutPage__useCaseItem aboutPage__useCaseItem2">
-                            <h5 className="aboutPage__useCaseItemName">Software Development <FontAwesomeIcon className="aboutPage__icon" icon={faLaptopCode}/></h5>
-                        </div>
-                        <div className="aboutPage__useCaseItem aboutPage__useCaseItem3">
-                            <h5 className="aboutPage__useCaseItemName">HR <FontAwesomeIcon className="aboutPage__icon" icon={faPeopleArrows}/></h5>
-                        </div>
-                        <div className="aboutPage__useCaseItem aboutPage__useCaseItem4">
-                            <h5 className="aboutPage__useCaseItemName">Product Management <FontAwesomeIcon className="aboutPage__icon" icon={faTasks}/></h5>
-                        </div>
-                        <div className="aboutPage__useCaseItem aboutPage__useCaseItem5">
-                            <h5 className="aboutPage__useCaseItemName">Sales <FontAwesomeIcon className="aboutPage__icon" icon={faHeadset}/></h5>
-                        </div>
-                        <div className="aboutPage__useCaseItem aboutPage__useCaseItem6">
-                            <h5 className="aboutPage__useCaseItemName">Media <FontAwesomeIcon className="aboutPage__icon" icon={faVideo}/></h5>
-                        </div>
-                        <div className="aboutPage__useCaseItem aboutPage__useCaseItem7">
-                            <h5 className="aboutPage__useCaseItemName">IT <FontAwesomeIcon className="aboutPage__icon" icon={faMicrochip}/></h5>
-                        </div>
-                        <div className="aboutPage__useCaseItem aboutPage__useCaseItem8">
-                            <h5 className="aboutPage__useCaseItemName">Marketing <FontAwesomeIcon className="aboutPage__icon" icon={faAd}/></h5>
-                        </div>
+                        {itemsToRender}
                     </div>
                 </div>
             </div>

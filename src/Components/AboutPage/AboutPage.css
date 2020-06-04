@@ -40,38 +40,6 @@
     margin: 0.5vh 0;
 }
 
-.aboutPage__useCaseItem1 {
-    background: var(--productify-red);
-}
-
-.aboutPage__useCaseItem2 {
-    background: var(--productify-green);
-}
-
-.aboutPage__useCaseItem3 {
-    background: var(--productify-turquoise);
-}
-
-.aboutPage__useCaseItem4 {
-    background: var(--productify-orange);
-}
-
-.aboutPage__useCaseItem5 {
-    background: var(--productify-purple);
-}
-
-.aboutPage__useCaseItem6 {
-    background: var(--productify-yellow);
-}
-
-.aboutPage__useCaseItem7 {
-    background: var(--productify-pink);
-}
-
-.aboutPage__useCaseItem8 {
-    background: var(--productify-blue);
-}
-
 .aboutPage__useCaseItems .aboutPage__useCaseItem{
     font-size: 40px;
 }
